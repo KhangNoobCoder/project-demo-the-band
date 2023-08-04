@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    --height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: var(--height);
+    padding: 0 21px;
+    font-size: 15px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a, 
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;  
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); 
+}
+
+#nav .subnav li {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    font-size: 15px;
+    line-height: 38px;
+}
+
+.angle-down-icon {
+    font-size: 13px;
+}
+
+#header .search:hover {
+    background-color: #f44336;
+}
+
+#header .search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    line-height: var(--height);
+    padding: 0 23px;
+}
+
+#slider {
+    margin-top: 46px;
+    background: url('/w3_band/assets/img/img_1.jpg') 
+    no-repeat top center / cover;
+    padding-top: 50%;
+    position: relative;
+}
+
+.text-content {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-content .text-heading {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.text-content .text-description {
+    margin: 15px 0;
+}
+
+#content {
+
+    height: 1000px;
+}
+
+.content-section {
+    width: 800px;
+    padding: 64px 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-section .name {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    height: 45px;
+    box-sizing: border-box;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.content-section .slogan {
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+.content-section .text {
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#footer {
+
+}
