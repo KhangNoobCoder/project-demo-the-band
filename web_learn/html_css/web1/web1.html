@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>học web cùng F8</title>
+        <meta charset="utf-8">    <!--giúp định dạng tiếng việt cho nd-->
+    </head>
+    
+    <body>
+        <div>
+            <h1>các thẻ thông dụng trong html</h1>
+            <ol>
+                <!-- tieu de cho noi dung -->
+                <li>h1 - heading</li> 
+
+                <!-- chen anh -->
+                <li>img - image</li>
+                <!-- vd -->
+                <img src="https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2023_07_01_293_46241972/cfb36955dc1835466c09.jpg.webp" alt="hình ảnh Tổng bí thư Nguyễn Phú Trọng">
+                
+                <!-- chen link web khac -->
+                <li>a - archor</li>
+                <!-- vd -->
+                <a href="https://baomoi.com/">tới trang</a>
+
+                <!-- doan van  -->
+                <li>p - paragraph</li>
+                <!-- vd -->
+                <p>Theo quan điểm của giáo sư, Ukraine đơn giản là không thể đủ sức thực hiện một số trận phản công, bất kể phương Tây cung cấp thiết bị gì, còn các nguồn lực bổ sung của phương Tây gửi cho Kiev có thể phần nào củng cố vị trí của quân đội Ukraine nhưng rõ ràng vẫn không mang tính quyết định.</p>
+                
+                <!-- danh sach  -->
+                <li>ul-li - unordered list- list</li>
+
+                <!-- tao bang -->
+                <li>table</li>
+                <!-- vd -->
+                <table>     
+                <!-- border ="0", không có vạch kẻ ngoài -->
+                    <thead>
+                        <th>STT</th>
+                        <th>Tên</th>
+                        <th>Địa chỉ</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Khang</td>
+                            <td>Phan Thiết</td>
+                        </tr>
+                    </tbody>
+                    
+                    
+                </table>
+               
+
+                <!-- tao o de nhap van ban -->
+                <li>input</li>
+                <!-- vd -->
+                <input type="text">
+
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+
+                <input name="tracnghiem" type="radio">
+                <input name="tracnghiem" type="radio">
+                <input name="tracnghiem" type="radio">
+
+                <!-- tao nut -->
+                <li>button</li>
+                <!-- vd -->
+                <button>SUBSCRIBE</button>
+
+                <!-- attribute - thuộc tính -->
+                <li>attribute - thuộc tính</li>
+                <h2 title="à không, là tiền của ba mẹ tôi thì đúng hơn">đây là tiền của tôi</h2>
+                
+                <!-- vùng của nd -->
+                <li>dive</li>
+
+                <li>
+                    <h3>CSS</h3>
+                    <ul>
+                        <!-- viết css trực tiếp trong thẻ head hoặc body -->
+                        <li>Internal</li>
+                        <!-- vd -->
+                        <style>
+                            h3 {
+                                color: red;
+                                font-size: 20px;
+                            }
+                        </style>
+
+                        <!-- viết css ở một file khác và link vào html -->
+                        <li>External</li>
+                        <!-- vd -->
+                        <link rel="stylesheet" href="external.css">
+                        <h4>external test</h4>
+                        
+                        <!-- viết trên thẻ heading -->
+                        <li>Inline</li> 
+                        <!-- vd -->
+                        <div style="color: orange; font-size: 40px">
+                            hello everyone
+                        </div>
+                    </ul>
+
+                </li>
+
+                <li>
+                    CSS
+                    <ul>
+                        <li>ID</li>
+                        <li>Class</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Priority
+                    <ul>
+                        <li>external and internal</li>
+                        <li>inline - 1000</li>
+                        <li>#id - 100</li>
+                        <li>.class - 10</li>
+                        <li>tag - 1</li>
+                        <li>equal specificity</li>
+                        <li>Universal selector and inherited</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    CSS units
+                    <ul>
+                        <!-- các đơn vị cố định -->
+                        <li>absolute units</li>
+                        <div>
+                            <ol>
+                                <li>px</li>
+                                <li>pt</li>
+                                <li>mm</li>
+                                <li>cm</li>
+                                <li>inch</li>
+                                <li>pc</li>
+                            </ol>
+                        </div>
+
+                        <!-- các đơn vị có thể thay đổi -->
+                        <li>relative units</li>
+                        <div>
+                            <ol>
+                                <li>%</li>
+                                <li>rem</li>
+                                <li>em</li>
+                                <li>vw</li>
+                                <li>vh</li>
+                                <li>vmin</li>
+                                <li>vmax</li>
+                                <li>ex</li>
+                                <li>ch</li>
+                            </ol>
+                        </div>
+                    </ul>
+                </li>
+
+                <li>
+                    <div>
+                        <ul>
+                            <li>padding</li>
+                            <li>border</li>
+                            <li>margin</li>
+                            <li>box-sizing</li>
+                            <div>
+                                <ul>
+                                    <!-- chinh ve kich thuoc dung nhu khai bao -->
+                                    <li>box-sizing: border-box</li>
+
+                                    <!-- chinh tro ve nhu mac dinh -->
+                                    <li>box-sizing: content-box</li>
+
+                                    <!-- huy tinh nang box-sizing: border-box -->
+                                    <li>box-sizing: unset</li>
+                                </ul>
+                            </div>
+                            <li>background-clip</li>
+                            <li>background-image</li>
+                            <div>
+                                <ul>
+                                    <li>background-image: url()</li>
+                                    <li>background-size: ...px or contain or cover
+                                    <!-- contain: can chinh sao cho khung anh to nhat co the nhung anh ko bi khuat -->
+                                    <!-- cover: uu tien kich thuoc (width or height) lon nhat hien du nhung kich thuoc con lai chap nhan bi khuat -->
+                                    </li>
+                                    <li>background-repeat: no-repeat or repeat-x or repeat-y</li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>
